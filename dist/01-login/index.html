@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Wax Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2bba1739f7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="section-center">
+      <button id="login">
+        <i class="fas fa-sign-in-alt"></i>
+        login
+      </button>
+    </section>
+    <script src="./main.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('service-worker.js')
+            .then(registration => {
+              console.log('Service Worker registered: ', registration);
+            })
+            .catch(registrationError => {
+              console.error(
+                'Service Worker registration failed: ',
+                registrationError
+              );
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

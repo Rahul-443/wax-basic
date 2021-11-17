@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "name": "my-webpack-project",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "workbox-webpack-plugin": "^6.4.1"
+  },
+  "dependencies": {
+    "@waxio/waxjs": "^1.0.4",
+    "regenerator-runtime": "^0.13.9"
+  }
+}

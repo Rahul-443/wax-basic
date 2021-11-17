@@ -1,0 +1,57 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  /* colors */
+  --text-color-1: #ffffff;
+
+  --dark-blue-1: #3f3e68;
+  --dark-blue-2: #323253;
+
+  /* gradients */
+  --linear-gradient-1: linear-gradient(124.22deg, #e3e4da 10.29%, #e4deda 100%);
+
+  /* fonts */
+  --font-family-1: 'Poppins', sans-serif;
+  --font-size-1: 16px;
+
+  /* borders */
+  --border-radius-1: 5px;
+
+  /* transitions */
+  --transition-1: all 0.3s linear;
+}
+
+.section-center {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: var(--linear-gradient-1);
+}
+
+#login {
+  background-color: var(--dark-blue-1);
+  border: none;
+  height: 4.125rem;
+  width: 19.5rem;
+  font-family: var(--font-family-1);
+  font-weight: 500;
+  color: var(--text-color-1);
+  font-size: var(--font-size-1);
+  cursor: pointer;
+  transition: var(--transition-1);
+  border-radius: var(--border-radius-1);
+}
+
+#login:hover {
+  background-color: var(--dark-blue-2);
+}
