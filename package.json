@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "Waxjs Basic utilities",
-  "name": "Waxjs Basic",
+  "name": "waxjs-basic",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",

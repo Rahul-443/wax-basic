@@ -8,9 +8,9 @@ const isProduction = process.env.NODE_ENV == 'production';
 const stylesHandler = 'style-loader';
 
 const config = {
-  entry: ['regenerator-runtime/runtime.js', './src/01-login/index.js'],
+  entry: ['regenerator-runtime/runtime.js', './src/02-transaction/index.js'],
   output: {
-    path: path.resolve(__dirname, 'dist/01-login')
+    path: path.resolve(__dirname, 'dist/02-transaction')
   },
   plugins: [
     // Add your plugins here

@@ -1,0 +1,180 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  /* colors */
+  --dark-blue-1: #3f3e68;
+  --mid-blue-1: #a7a6c3;
+
+  --cream-1: #f2e7da;
+  --cream-2: #f8f4e7;
+  --cream-3: #fefaf3;
+
+  --white: #ffffff;
+
+  --dark-blue-1-8A: rgba(63, 62, 104, 0.8);
+  --dark-blue-1-D: #323253;
+
+  /* gradients */
+  --linear-gradient-1: linear-gradient(124.22deg, #e3e4da 10.29%, #e4deda 100%);
+
+  /* fonts */
+  --font-family-1: 'Poppins', sans-serif;
+
+  --font-size-05: 14px;
+  --font-size-1: 16px;
+  --font-size-2: 32px;
+
+  /* borders */
+  --border-1: 1px solid #a7a6c3;
+  --border-2: 2px solid #a7a6c3;
+  --border-3: 38px solid #fefaf3;
+
+  --border-1-D: 2px solid #3f3e68;
+
+  --border-radius-1: 5px;
+  --border-radius-2: 15px;
+
+  /* shadows */
+  --shadow-1: 0px 36px 45px -26px rgba(166, 169, 190, 0.5);
+
+  /* transitions */
+  --transition-1: all 0.3s ease-in;
+}
+
+.section-center {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-1);
+  color: var(--dark-blue-1);
+  position: relative;
+  background-image: var(--linear-gradient-1);
+}
+
+.login-section {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+#login {
+  border-radius: 50%;
+  height: 2.4rem;
+  width: 2.4rem;
+  font-family: var(--font-family-1);
+  font-size: 1rem;
+  color: var(--dark-blue-1-8A);
+  background-color: white;
+  border: var(--border-1);
+  cursor: pointer;
+  transition: var(--transition-1);
+}
+
+.login:hover {
+  color: var(--dark-blue-1);
+}
+
+.transaction-card {
+  background-color: var(--white);
+  border: var(--border-3);
+  border-radius: var(--border-radius-2);
+  padding: 4.5rem 3.75rem;
+  box-shadow: var(--shadow-1);
+  max-width: 50rem;
+}
+
+.transaction-card > h3 {
+  font-weight: bold;
+  font-size: var(--font-size-2);
+  margin-bottom: 1rem;
+}
+
+.transaction-details {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.transaction-detail-section {
+  display: grid;
+  font-weight: 500;
+}
+
+.transaction-detail-section input {
+  border: var(--border-2);
+  border-radius: var(--border-radius-1);
+  padding: 1.3rem 2rem;
+  margin-top: 0.3rem;
+  color: var(--dark-blue-1-8A);
+  width: 21rem;
+}
+
+.transaction-detail-section input:focus {
+  outline: var(--border-1);
+}
+
+.transaction-detail-section select {
+  border: var(--border-2);
+  border-radius: var(--border-radius-1);
+  font-size: var(--font-size-1);
+  padding: 1.15rem 2rem;
+  color: var(--dark-blue-1-8A);
+  background-color: var(--white);
+  text-align: center;
+  vertical-align: middle;
+  font-family: var(--font-family-1);
+  cursor: pointer;
+  margin-left: 0.3rem;
+}
+
+.amount-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-transact {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.section-transact > input {
+  width: 100%;
+  height: 4.1rem;
+  border: none;
+  background-color: var(--dark-blue-1);
+  color: var(--white);
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-1);
+  cursor: pointer;
+  transition: var(--transition-1);
+}
+
+.section-transact > input:hover {
+  background-color: var(--dark-blue-1-D);
+}
+
+.section-result {
+  margin-top: 2rem;
+  width: 30rem;
+  font-size: var(--font-size-05);
+  border: var(--border-1);
+  padding: 0.8rem 1.3rem;
+  border-radius: var(--border-radius-1);
+  display: block;
+  color: var(--dark-blue-1-8A);
+}
+
+.show-section-result {
+  display: block;
+}
